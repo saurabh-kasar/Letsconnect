@@ -1,0 +1,24 @@
+
+     .jumbotron{
+        height: 100px;
+        text-align: center;
+        background-color: #442220;
+        color:#759EB8;
+       
+    }
+
+    div.card{
+        max-width: 20em;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+      }
+
+      body{
+          background-size: cover;
+      }
+
+      h1{
+          color:#C5D5EA;
+      }

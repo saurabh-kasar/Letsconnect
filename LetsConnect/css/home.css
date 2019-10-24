@@ -1,0 +1,59 @@
+
+body{
+font-family: 'Roboto Slab', serif;
+background-size:cover;
+}
+
+p{
+    text-align:center;
+    margin-top:15%;
+    color:white;
+    font: italic bold 50px/30px Georgia, serif;
+  }
+    
+    .topnav {
+      background-color: #000;
+    }
+    
+    .topnav a {
+       
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 22px;
+    }
+    
+    .topnav-right a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav-right {
+      float: right;
+    }
+
+    a.ho1:hover
+    {
+        text-shadow: 0 0 3px #FF0000, 0 0 5px white;
+    }
+
+    .ho1
+    {
+        font-family: 'Pacifico', cursive;
+        
+    }
+
+    .table
+    {
+        margin-top: 15%;
+        background-color: #2B4141;
+    }
+
+    .cen
+    {
+      margin-left:10%;
+      margin-top:2%;
+      color:#CCDBDC;
+    }

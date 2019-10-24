@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Patua+One|Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/home.css" type="text/css">
+        <script src="js/script.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+          <script type="text/javascript">
+
+          function dname()
+          {
+            let params = (new URL(document.location)).searchParams;
+            let email = params.get("email");
+            var object = JSON.parse(localStorage.getItem(email));
+            name = " " + object.fname;
+            document.getElementById("hi").innerHTML += name;
+
+            if(sessionStorage.getItem("Online") == email)
+            {
+              var str = JSON.parse(localStorage.getItem(email));
+              str.status = "Online";
+              localStorage.setItem(email, JSON.stringify(str));
+            }
+          }
+          
+          window.addEventListener('beforeunload', function (e) { 
+            setoffline();
+            }); 
+
+          </script>
+          
+</head>
+
+<body id="home" background="images/motion.gif" onload="return logchk(), dname(), online()" hidden>
+    <div class="navbar topnav">
+        <a class="ho1" href="#" >Let's Connect</a>
+
+    <div class="topnav-right">
+          <a href="#" onclick="logout()">Logout</a>
+          <a href="#" onclick="deregister()">De-register</a>
+    </div>
+    </div>
+    </nav>
+    <div class="cen">
+    <h1 id="hi">Hi,</h1>
+    </div>
+    
+    <div class="container">
+          <table id="users" class="table table-dark table-hover">
+         
+          <tr><th>User Name</th> <th>Status</th>  <th> Email </th>  </tr>
+
+        </table>
+      </div>
+      
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SignUp</title>
+    
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/signup.css" type="text/css">
+  <script src="js/script.js"></script>
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+</head>
+
+<body>
+        <div id="head">
+            <h4 class="display-4" style="text-align: center;">Sign Up</h4>
+        </div>
+ 
+
+        <div class="container">      
+                <form id="signup" name="signup" method="POST">
+                  <div class="form-group">
+                  <label for="fname">First Name: </label>
+                  <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required>
+                  </div>
+                  
+                  <div class="form-group">
+                  <label for="lname">Last Name:</label> 
+                  <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" required>
+                  </div>
+                
+                  <div class="form-group">
+                      <label for="gender">Gender</label>
+                      <select class="form-control" id="gender" name="gender" required>
+                      <option value="" disabled selected hidden>Select Gender:</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      </select>
+                  </div>
+
+                  <div class="form-group">
+                  <label for="email">Email:</label> 
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+                  </div>
+
+                  <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password" required>
+                  </div>
+                  
+                  <div class="form-group">
+                  <label for="pwd1">Confirm Password:</label>
+                  <input type="password" class="form-control" id="pwd1" name="pwd1" minlength="8" placeholder="Confirm password" required>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary" onclick="return validate()">Sign Up</button>
+                  <button type="reset" class="btn btn-primary">Reset</button>
+                  <button type="button" class="btn btn-primary" onclick="cancel1()">Cancel</button>
+                </form>
+              </div>
+</body>
+</html>
