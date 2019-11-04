@@ -18,8 +18,7 @@
 
           function dname()
           {
-            let params = (new URL(document.location)).searchParams;
-            let email = params.get("email");
+            var email = sessionStorage.getItem("Online");
             var object = JSON.parse(localStorage.getItem(email));
             name = " " + object.fname;
             document.getElementById("hi").innerHTML += name;
@@ -57,7 +56,7 @@
     <div class="container">
           <table id="users" class="table table-dark table-hover">
          
-          <tr><th>User Name</th> <th>Status</th>  <th> Email </th>  </tr>
+          <tr><th>User Name</th> <th>Email</th>  <th>  Status</th>  </tr>
 
         </table>
       </div>

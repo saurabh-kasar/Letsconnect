@@ -5,3 +5,44 @@ div.container{
 #head{
     margin-top:2vw;
 }
+
+body{
+    background-size: cover;
+    color:#CCBCBC;
+    font-size:17px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+h1:hover
+{
+    text-shadow: 0 0 3px white, 0 0 5px blue;
+}
+
+
+div.card{
+    width: 100%;
+    padding:3px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+}
+
+.jumbotron{
+    height: 50px;
+    text-align: center;
+    background-color: #442220;
+    color:#F1E3E4;
+    font-family: 'Roboto Slab', serif;  
+}
+
+
+.jumbotron:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
+
+hr {
+    border-color: white;
+}

@@ -12,13 +12,21 @@
     }
 
     .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
       }
 
       body{
           background-size: cover;
+          font-family: 'Roboto Slab', serif;
+
       }
 
       h1{
           color:#C5D5EA;
       }
+
+      h1:hover
+{
+    text-shadow: 0 0 3px white, 0 0 5px blue;
+}
+
